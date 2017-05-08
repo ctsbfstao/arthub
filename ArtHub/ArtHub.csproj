@@ -183,12 +183,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\ExhibitService.cs" />
+    <Compile Include="Application\IExhibitService.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ExhibitController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -198,12 +201,29 @@
     <Compile Include="Migrations\201705080432550_InitialModel.Designer.cs">
       <DependentUpon>201705080432550_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705081540063_ExhibitDataModel.cs" />
+    <Compile Include="Migrations\201705081540063_ExhibitDataModel.Designer.cs">
+      <DependentUpon>201705081540063_ExhibitDataModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705081617000_ExhibitTypes.cs" />
+    <Compile Include="Migrations\201705081617000_ExhibitTypes.Designer.cs">
+      <DependentUpon>201705081617000_ExhibitTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705081657527_ExhibitForeignKey.cs" />
+    <Compile Include="Migrations\201705081657527_ExhibitForeignKey.Designer.cs">
+      <DependentUpon>201705081657527_ExhibitForeignKey.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Exhibit.cs" />
+    <Compile Include="Models\ExhibitType.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\ExhibitCreateViewModel.cs" />
+    <Compile Include="ViewModels\ExhibitViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -263,6 +283,8 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Exhibit\Index.cshtml" />
+    <Content Include="Views\Exhibit\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -285,6 +307,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201705080432550_InitialModel.resx">
       <DependentUpon>201705080432550_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705081540063_ExhibitDataModel.resx">
+      <DependentUpon>201705081540063_ExhibitDataModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705081617000_ExhibitTypes.resx">
+      <DependentUpon>201705081617000_ExhibitTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705081657527_ExhibitForeignKey.resx">
+      <DependentUpon>201705081657527_ExhibitForeignKey.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

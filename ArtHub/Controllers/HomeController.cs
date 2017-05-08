@@ -10,7 +10,7 @@ namespace ArtHub.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index", "Exhibit");
         }
 
         public ActionResult About()

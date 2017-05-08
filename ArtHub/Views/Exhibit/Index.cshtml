@@ -1,0 +1,37 @@
+﻿@model ArtHub.ViewModels.ExhibitViewModel
+
+@{
+    ViewBag.Title = "View Exhibits";
+}
+
+<h1>@Model.Heading</h1>
+
+<div class='table-responsive'>
+    <table class='table'>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Type</th>
+            <th>Created</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        @foreach (var gig in Model.Exhibits)
+        {
+            <tr>
+                <td>
+                    @gig.Name
+                </td>
+                <td>@gig.Description
+                </td>
+                <td>@gig.Type.Name</td>
+                <td>@gig.Created.ToString("d ") @gig.Created.ToString("MMM") @gig.Created.ToString("yyyy")</td>
+            </tr>
+        }
+
+
+        </tbody>
+    </table>
+</div>
