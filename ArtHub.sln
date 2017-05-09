@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtHub", "ArtHub\ArtHub.csproj", "{D357933E-F02F-47A2-BDB0-9C1BAC0B6627}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Before", "Before", "{94894ABD-625E-484D-837C-81FC393BF921}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "After", "After", "{24470838-0A13-4DA0-8FD9-C1EAE53D5D2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D357933E-F02F-47A2-BDB0-9C1BAC0B6627} = {94894ABD-625E-484D-837C-81FC393BF921}
 	EndGlobalSection
 EndGlobal
