@@ -1,0 +1,18 @@
+{
+  "scriptFile": "..\\bin\\ArtHub.CommandService.dll",
+  "entryPoint": "ArtHub.CommandService.CommandServiceFunction.Run",
+  "disabled": false,
+  "bindings": [
+    {
+      "authLevel": "function",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in"
+    },
+    {
+      "name": "return",
+      "type": "http",
+      "direction": "out"
+    }
+  ]
+}

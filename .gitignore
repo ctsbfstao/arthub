@@ -259,3 +259,6 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/ArtHub/Properties/PublishProfiles/FolderProfile.pubxml
+/ArtHub/App_Data/script.sql
+/ArtHub.CommandService/local.settings.json
