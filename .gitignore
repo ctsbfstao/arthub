@@ -262,3 +262,5 @@ __pycache__/
 /ArtHub/Properties/PublishProfiles/FolderProfile.pubxml
 /ArtHub/App_Data/script.sql
 /ArtHub.CommandService/local.settings.json
+/ArtHub.CommandService/Properties/PublishProfiles/ArtHubCommandService - FTP.pubxml
+/ArtHub.CommandService/Properties/PublishProfiles/ArtHubCommandService - Web Deploy.pubxml

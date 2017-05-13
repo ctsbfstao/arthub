@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "After", "After", "{24470838
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtHub.CommandService", "ArtHub.CommandService\ArtHub.CommandService.csproj", "{B8E518C0-93A9-4413-A4DB-1FA373CC458C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtHub.CQRS", "ArtHubAfterCQRS\ArtHub.CQRS.csproj", "{20DD3413-8E55-4642-BCCD-3C5FF922B49A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{B8E518C0-93A9-4413-A4DB-1FA373CC458C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8E518C0-93A9-4413-A4DB-1FA373CC458C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8E518C0-93A9-4413-A4DB-1FA373CC458C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20DD3413-8E55-4642-BCCD-3C5FF922B49A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20DD3413-8E55-4642-BCCD-3C5FF922B49A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20DD3413-8E55-4642-BCCD-3C5FF922B49A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20DD3413-8E55-4642-BCCD-3C5FF922B49A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,5 +38,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D357933E-F02F-47A2-BDB0-9C1BAC0B6627} = {94894ABD-625E-484D-837C-81FC393BF921}
 		{B8E518C0-93A9-4413-A4DB-1FA373CC458C} = {24470838-0A13-4DA0-8FD9-C1EAE53D5D2A}
+		{20DD3413-8E55-4642-BCCD-3C5FF922B49A} = {24470838-0A13-4DA0-8FD9-C1EAE53D5D2A}
 	EndGlobalSection
 EndGlobal
